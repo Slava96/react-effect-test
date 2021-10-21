@@ -16,7 +16,7 @@ val Welcome = functionalComponent<WelcomeProps> { props ->
     val (name, setName) = useState(props.name)
     val (loading, setLoading) = useState(true)
 
-    useEffect(listOf(name)) {
+    useEffect(listOf(name)) { //change from listOf to arrayOf
         console.log("I'm effect!")
     }
 
